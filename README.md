@@ -11,9 +11,8 @@
 
 Two tests will be performed. You can run them on an Intel CPU only, but it will be slow to respond. Better to run it on an M1 or M2 where you have some GPU available. There the reasoning flows reasonably well, with iterations on the prompt shown every few seconds.
 
-Test #1: The first will prompt the model to ask for Barack Obama's birthday. Because this answer may not appear in the base model (it does, but we ignore the fact here) Langchain call on tools you defined to research the question from the Internet. While it reasons it calls wikipedia and duckduckgo.
+Test #1: The first will prompt the model to ask for Barack Obama's birthday. Because this answer may not appear in the base model (it does, but we ignore the fact here) Langchain call on tools you defined to research the question from the Internet. While it reasons it calls wikipedia and duckduckgo to supply it context.
 
-Test #2: The prompt asks for Obama's age. It reasons in the same way as Test #1.
+Test #2: The prompt asks for Obama's age. It reasons in the same way as Test #1. But, this is a more elaborate test of reasoning since it asks for an age which is factored on a birth date in the past and now.
 
-Sometimes it arrives at an answer. Sometimes it fails. I'm still researching how to achieve a reliable result. A local 4-bit LLM has some limitations, for one, context length. Which is why
-I truncate responses from wikipedia and duckduckgo to 128 chars. When I have the time I will install an LLM on cloud, wrap an API around this script and tweak more -- with a more powerful GPU I can run the full model and I'm sure I can achieve better results.
+Sometimes it arrives at an answer. Sometimes it fails. I'm still researching how to achieve a reliable result. A local 4-bit LLM has some limitations, for one, context length. Which is why I truncate responses from wikipedia and duckduckgo to 128 chars. When I have the time I will install an LLM on cloud, wrap an API around this script and tweak more -- with a more powerful GPU I can run the full model and I'm sure I can achieve better results.
