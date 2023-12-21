@@ -1,3 +1,5 @@
+# LangChain Experiments
+
 ## Setup simple Langchain ToolChain
 
 - install conda if necessary, create and activate a new environment
@@ -14,4 +16,4 @@ Test #1: The first will prompt the model to ask for Barack Obama's birthday. Bec
 Test #2: The prompt asks for Obama's age. It reasons in the same way as Test #1.
 
 Sometimes it arrives at an answer. Sometimes it fails. I'm still researching how to achieve a reliable result. A local 4-bit LLM has some limitations, for one, context length. Which is why
-I truncate responses from wikipedia and duckduckgo to 128 chars. When I have the time I will install an LLM on cloud, wrap an API around this script and tweak more -- with a more powerful GPU I can run the full model and I'm sure I achieve better results.
+I truncate responses from wikipedia and duckduckgo to 128 chars. When I have the time I will install an LLM on cloud, wrap an API around this script and tweak more -- with a more powerful GPU I can run the full model and I'm sure I can achieve better results.
