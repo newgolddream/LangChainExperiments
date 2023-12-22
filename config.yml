@@ -10,4 +10,4 @@ TEMPERATURE: 0.00
 STREAMING: True
 
 MODEL_TYPE: "mistral"
-MODEL_BIN_PATH: "/Users/ngd/AI/constitution-bot/models/mistral-7b-instruct-v0.1.Q4_K_M.gguf"
+MODEL_BIN_PATH: "[PATH_TO_MODEL]"
